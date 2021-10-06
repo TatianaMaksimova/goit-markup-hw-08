@@ -1,0 +1,40 @@
+.customers {
+  &__title {
+    @extend %title;
+  }
+}
+
+.customers__title {
+  margin-bottom: 50px;
+}
+
+.customers__list {
+  display: flex;
+}
+
+.customers__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers__link {
+  color: $icon-primary-color;
+  transition: border-color $duration $timing-function, color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.customers__link {
+  @include centeredFlex();
+  width: 170px;
+  height: 92px;
+  border: 1px solid $icon-primary-color;
+  border-radius: 4px;
+}
+
+.customers__icon {
+  fill: currentColor;
+}

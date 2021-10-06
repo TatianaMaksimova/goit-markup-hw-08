@@ -1,0 +1,52 @@
+.suggestions--geometry {
+  padding-top: 0;
+}
+
+.suggestions {
+  &__title {
+    @extend %title;
+  }
+
+  &__overlay {
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: $fontSize;
+    line-height: 1.14;
+    text-align: center;
+    color: $bgd-text-color;
+    letter-spacing: $letterSpace;
+    text-transform: uppercase;
+  }
+}
+
+.suggestions__title {
+  margin-bottom: 50px;
+}
+
+.suggestions__list {
+  display: flex;
+}
+
+.suggestions__item {
+  position: relative;
+  width: 370px;
+}
+
+.suggestions__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.suggestions__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+}
+
+.suggestions__text {
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

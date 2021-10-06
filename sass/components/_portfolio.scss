@@ -1,0 +1,118 @@
+.filter-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-list__button {
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #f5f4fa;
+
+  transition: background-color $duration $timing-function, color $duration $timing-function,
+    box-shadow $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $bgd-text-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.portfolio__link {
+  display: block;
+  transition: box-shadow $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .portfolio__overlay,
+  &:focus .portfolio__overlay {
+    transform: translateY(0);
+    background-color: rgba(33, 150, 243, 0.9);
+  }
+
+  &:hover .portfolio__text,
+  &:focus .portfolio__text {
+    color: $bgd-text-color;
+  }
+}
+
+.portfolio__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: background-color $duration $timing-function, transform $duration $timing-function;
+}
+
+.portfolio {
+  &__text {
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: $letterSpace;
+    color: $bgd-text-color;
+
+    transition: color $duration $timing-function;
+  }
+  &__name {
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+  }
+  &__filter-text {
+    color: $secondary-text-color;
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+
+.portfolio__text {
+  position: absolute;
+  top: 63px;
+  left: 24px;
+  right: 24px;
+}
+
+.portfolio__caption {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
+.portfolio__name {
+  margin-bottom: 4px;
+}

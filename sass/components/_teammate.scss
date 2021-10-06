@@ -1,0 +1,91 @@
+.teammate {
+  background-color: #f5f4fa;
+
+  &__title {
+    @extend %title;
+  }
+
+  &__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__card {
+    background-color: $bgd-text-color;
+    font-size: 16px;
+    line-height: $lineHeight;
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: 500;
+  }
+
+  &__profession {
+    color: $secondary-text-color;
+    font-weight: $fontWeight;
+  }
+}
+
+.teammate__title {
+  margin-bottom: 50px;
+}
+
+.teammate__list {
+  display: flex;
+}
+
+.teammate__item {
+  width: 270px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+}
+
+.teammate__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.teammate__card {
+  padding: 30px 32px;
+}
+
+.teammate__name {
+  margin-bottom: 10px;
+}
+
+.teammate__profession {
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-list__link {
+  @include centeredFlex();
+  padding: 0;
+
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+}
+
+.social-list__link {
+  color: $icon-primary-color;
+  background-color: $bgd-text-color;
+  transition: background-color $duration $timing-function, color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $bgd-text-color;
+  }
+}
+
+.social-list__icon {
+  fill: currentColor;
+}
