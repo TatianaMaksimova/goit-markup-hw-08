@@ -5,8 +5,7 @@
 .page-header__container,
 .page-header__site-nav,
 .site-nav__list {
-  display: flex;
-  align-items: center;
+  @include alignFlex();
 }
 
 .site-nav__item:not(:last-child),
@@ -17,9 +16,9 @@
 .site-nav {
   &__logo {
     color: #000000;
-    font-family: $fontFamily;
+    font-family: Raleway, sans-serif;
     font-size: 26px;
-    line-height: $lineHeight;
+    line-height: 1.2;
     text-decoration: none;
   }
 
@@ -40,10 +39,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  font-size: $fontSize;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, 14px, 1.14, 0.02em);
   text-decoration: none;
 
   color: $primary-text-color;
@@ -56,7 +52,6 @@
 
   &--active {
     position: relative;
-
     color: $accent-color;
   }
   &--active::after {
@@ -88,8 +83,7 @@
 }
 
 .page-header__link {
-  display: flex;
-  align-items: center;
+  @include alignFlex();
   padding: 0;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -98,9 +92,7 @@
 
 .page-header {
   &__link {
-    font-weight: 500;
-    font-size: $fontSize;
-    line-height: 1.14;
+    @include font3(500, 14px, 1.14);
     text-decoration: none;
     color: $secondary-text-color;
 

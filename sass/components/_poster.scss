@@ -18,9 +18,7 @@
 
   &__title {
     color: $bgd-text-color;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    @include font3(900, 44px, 1.4);
     text-align: center;
     text-transform: uppercase;
   }
@@ -35,9 +33,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
+  @include font3(700, 16px, 1.9);
   color: $bgd-text-color;
   background-color: $accent-color;
   cursor: pointer;
@@ -89,29 +85,20 @@
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: $lineHeight;
+    @include font(700, 20px, 1.2, 0.03em);
     text-align: center;
-    letter-spacing: $letterSpace;
     color: $primary-text-color;
   }
 
   &__label {
-    font-weight: $fontWeight;
-    font-size: 12px;
-    line-height: $lineHeight;
-    letter-spacing: 0.01em;
+    @include font(400, 12px, 1.2, 0.01em);
     text-align: start;
     color: $secondary-text-color;
   }
 
   &__send {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
+    @include font(700, 16px, 1.9, 0.06em);
     text-align: center;
-    letter-spacing: 0.06em;
     color: $bgd-text-color;
   }
 }
@@ -227,19 +214,13 @@
 }
 
 .dropdown__input--textarea::placeholder {
-  font-weight: $fontWeight;
-  font-size: 12px;
-  line-height: $lineHeight;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 1.2, 0.01em);
   color: rgba(117, 117, 117, 0.5);
 }
 
 .agreement {
   &__text {
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    line-height: 1.7;
-    letter-spacing: $letterSpace;
+    @include font(400, 14px, 1.7, 0.03em);
     color: $secondary-text-color;
   }
 
@@ -256,8 +237,7 @@
 }
 
 .agreement__label {
-  display: flex;
-  align-items: center;
+  @include alignFlex();
 }
 
 .agreement__input {

@@ -12,12 +12,9 @@
   }
 
   &__text {
-    font-weight: 700;
-    font-size: $fontSize;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14, 0.03em);
     text-align: center;
     color: $bgd-text-color;
-    letter-spacing: $letterSpace;
     text-transform: uppercase;
   }
 }

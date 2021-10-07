@@ -454,11 +454,11 @@ a {
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  font-family: inherit;
   cursor: pointer;
   background-color: #f5f4fa;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -642,8 +642,8 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .attach__title {
@@ -777,8 +777,8 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   color: #ffffff;
 }
 

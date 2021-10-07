@@ -13,7 +13,7 @@
   &__card {
     background-color: $bgd-text-color;
     font-size: 16px;
-    line-height: $lineHeight;
+    line-height: 1.2;
     text-align: center;
   }
 
@@ -23,7 +23,7 @@
 
   &__profession {
     color: $secondary-text-color;
-    font-weight: $fontWeight;
+    font-weight: 400;
   }
 }
 
@@ -59,9 +59,8 @@
 }
 
 .social-list {
-  display: flex;
+  @include alignFlex();
   justify-content: space-between;
-  align-items: center;
 }
 
 .social-list__link {

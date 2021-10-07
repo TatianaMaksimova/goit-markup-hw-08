@@ -16,17 +16,12 @@
   }
 
   &__title {
-    font-weight: 700;
-    font-size: $fontSize;
-    line-height: 1.14;
+    @include font3(700, 14px, 1.14);
     text-transform: uppercase;
   }
 
   &__text {
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    line-height: 1.7;
-    letter-spacing: $letterSpace;
+    @include font(400, 14px, 1.7, 0.03em);
     color: $secondary-text-color;
   }
 }

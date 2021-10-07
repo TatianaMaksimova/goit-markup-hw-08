@@ -538,8 +538,8 @@ a {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -556,8 +556,8 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -841,9 +841,9 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #ffffff;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -940,12 +940,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .social-list__link {
@@ -1101,8 +1101,8 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .attach__title {
@@ -1236,8 +1236,8 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   color: #ffffff;
 }
 

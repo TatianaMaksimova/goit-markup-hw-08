@@ -13,11 +13,9 @@
   border: 1px solid transparent;
   border-radius: 4px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
   font-family: inherit;
+  @include font3(500, 16px, 1.6);
+  text-align: center;
   cursor: pointer;
   background-color: #f5f4fa;
 
@@ -78,21 +76,18 @@
 
 .portfolio {
   &__text {
-    font-style: $fontStyle;
-    font-weight: $fontWeight;
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: $letterSpace;
+    font-style: normal;
+    @include font(400, 18px, 1.6, 0.03em);
     color: $bgd-text-color;
 
     transition: color $duration $timing-function;
   }
+
   &__name {
     color: $primary-text-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include font3(700, 18px, 2);
   }
+
   &__filter-text {
     color: $secondary-text-color;
     font-size: 16px;

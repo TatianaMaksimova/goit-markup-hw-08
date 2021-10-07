@@ -8,9 +8,9 @@
   color: $bgd-text-color;
 
   &__logo {
-    font-family: $fontFamily;
+    font-family: Raleway, sans-serif;
     font-size: 26px;
-    line-height: $lineHeight;
+    line-height: 1.2;
     text-decoration: none;
     color: $bgd-text-color;
   }
@@ -21,17 +21,14 @@
 
   &__address,
   &__link {
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    line-height: 1.7;
-    font-style: $fontStyle;
+    @include font3(400, 14px, 1.7);
+    font-style: normal;
     text-decoration: none;
   }
 }
 
 .page-footer__container {
-  display: flex;
-  align-items: baseline;
+  @include alignFlex(flex, baseline);
 }
 
 .page-footer__logo {
@@ -68,11 +65,8 @@
 
 .attach {
   &__title {
-    font-weight: 700;
-    font-size: $fontSize;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
-    letter-spacing: $letterSpace;
   }
 }
 
@@ -117,8 +111,7 @@
 
 /* ------------------------Форма---------------------- */
 .footer-form--geometry {
-  display: flex;
-  align-items: flex-end;
+  @include alignFlex(flex, flex-end);
 }
 
 .footer-form__input {
@@ -145,32 +138,22 @@
 
 .footer-form {
   &__title {
-    font-weight: 700;
-    font-size: $fontSize;
-    line-height: 1.14;
-    letter-spacing: $letterSpace;
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: $bgd-text-color;
   }
   &__input::placeholder {
-    font-weight: $fontWeight;
-    font-size: 16px;
-    line-height: 1.3;
-    letter-spacing: $letterSpace;
+    @include font(400, 16px, 1.3, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
   &__button {
     background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
     cursor: pointer;
   }
   &__submit {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
+    @include font(700, 16px, 1.9, 0.06em);
     text-align: center;
-    letter-spacing: 0.06em;
     color: $bgd-text-color;
   }
 }
