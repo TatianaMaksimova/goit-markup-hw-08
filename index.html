@@ -17,6 +17,37 @@
       <div class="container page-header__container">
         <nav class="site-nav page-header__site-nav">
           <a href="#" class="site-nav__logo"><span class="site-nav__accent">Web</span>Studio</a>
+
+          <button
+            type="button"
+            class="site-nav__button is-open"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="site-nav__close" href="./images/icons.svg#menu-close"></use>
+              <use class="site-nav__menu" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container">
+            <ul class="menu-container__nav">
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="menu-container__contact">
+              <li><a href="#">+38 096 111 11 11</a></li>
+              <li><a href="#">info@devstudio.com</a></li>
+            </ul>
+            <ul class="menu-container__social">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="#" class="site-nav__link site-nav__link--active">Студия</a>
@@ -495,5 +526,13 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -4,17 +4,17 @@
   }
 }
 
-.customers__title {
-  margin-bottom: 50px;
-}
+// .customers__title {
+//   margin-bottom: 50px;
+// }
 
-.customers__list {
-  display: flex;
-}
+// .customers__list {
+//   display: flex;
+// }
 
-.customers__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .customers__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .customers__link {
   color: $icon-primary-color;
@@ -28,7 +28,7 @@
 }
 
 .customers__link {
-  @include centeredFlex();
+  // @include centeredFlex();
   width: 170px;
   height: 92px;
   border: 1px solid $icon-primary-color;

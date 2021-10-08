@@ -1,8 +1,12 @@
-.suggestions--geometry {
-  padding-top: 0;
-}
+// .suggestions--geometry {
+//   padding-top: 0;
+// }
 
 .suggestions {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   &__title {
     @extend %title;
   }
@@ -19,22 +23,22 @@
   }
 }
 
-.suggestions__title {
-  margin-bottom: 50px;
-}
+// .suggestions__title {
+//   margin-bottom: 50px;
+// }
 
-.suggestions__list {
-  display: flex;
-}
+// .suggestions__list {
+//   display: flex;
+// }
 
 .suggestions__item {
   position: relative;
   width: 370px;
 }
 
-.suggestions__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .suggestions__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .suggestions__overlay {
   position: absolute;
@@ -43,7 +47,7 @@
   height: 70px;
 }
 
-.suggestions__text {
-  padding-top: 27px;
-  padding-bottom: 27px;
-}
+// .suggestions__text {
+//   padding-top: 27px;
+//   padding-bottom: 27px;
+// }

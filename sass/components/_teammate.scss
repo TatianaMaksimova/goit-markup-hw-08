@@ -27,13 +27,13 @@
   }
 }
 
-.teammate__title {
-  margin-bottom: 50px;
-}
+// .teammate__title {
+//   margin-bottom: 50px;
+// }
 
-.teammate__list {
-  display: flex;
-}
+// .teammate__list {
+//   display: flex;
+// }
 
 .teammate__item {
   width: 270px;
@@ -42,30 +42,30 @@
   overflow: hidden;
 }
 
-.teammate__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .teammate__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 
-.teammate__card {
-  padding: 30px 32px;
-}
+// .teammate__card {
+//   padding: 30px 32px;
+// }
 
-.teammate__name {
-  margin-bottom: 10px;
-}
+// .teammate__name {
+//   margin-bottom: 10px;
+// }
 
-.teammate__profession {
-  margin-bottom: 16px;
-}
+// .teammate__profession {
+//   margin-bottom: 16px;
+// }
 
-.social-list {
-  @include alignFlex();
-  justify-content: space-between;
-}
+// .social-list {
+//   @include alignFlex();
+//   justify-content: space-between;
+// }
 
 .social-list__link {
-  @include centeredFlex();
-  padding: 0;
+  // @include centeredFlex();
+  // padding: 0;
 
   width: 44px;
   height: 44px;

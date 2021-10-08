@@ -1,15 +1,15 @@
-.filter-list {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-}
+// .filter-list {
+//   display: flex;
+//   margin-bottom: 50px;
+//   justify-content: center;
+// }
 
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
-}
+// .filter-list__item:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 .filter-list__button {
-  padding: 6px 22px;
+  // padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
 
@@ -31,11 +31,11 @@
   }
 }
 
-.portfolio__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
+// .portfolio__list {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
+//   gap: 30px;
+// }
 
 .portfolio__link {
   display: block;
@@ -103,11 +103,11 @@
 }
 
 .portfolio__caption {
-  padding: 20px 24px;
+  // padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
 
-.portfolio__name {
-  margin-bottom: 4px;
-}
+// .portfolio__name {
+//   margin-bottom: 4px;
+// }
