@@ -80,7 +80,10 @@
 
 .social-list {
   @include alignFlex();
-  justify-content: space-between;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .social-list__link {
