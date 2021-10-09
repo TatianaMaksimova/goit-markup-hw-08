@@ -2,11 +2,17 @@
   border-bottom: 1px solid #ececec;
 }
 
-// .page-header__container,
-// .page-header__site-nav,
-// .site-nav__list {
-//   @include alignFlex();
-// }
+.page-header__container,
+.page-header__site-nav,
+.site-nav__list {
+  @include alignFlex();
+}
+
+// Это для мобильного окна!!!
+.page-header__site-nav {
+  justify-content: space-between;
+  min-height: 60px;
+}
 
 // .site-nav__item:not(:last-child),
 // .page-header__item:not(:last-child) {
@@ -26,8 +32,6 @@
     color: $accent-color;
   }
 }
-
-
 
 // .site-nav__logo {
 //   display: block;
@@ -93,6 +97,8 @@
 // }
 
 .page-header {
+  position: relative;
+
   &__link {
     @include font3(500, 14px, 1.14);
     text-decoration: none;
