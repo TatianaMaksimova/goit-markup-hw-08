@@ -92,6 +92,12 @@
 }
 
 .portfolio__link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
   display: block;
   transition: box-shadow $duration $timing-function;
 
@@ -140,6 +146,10 @@
   &__name {
     color: $primary-text-color;
     @include font3(700, 18px, 2);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 20px;
+    }
   }
 
   &__filter-text {
@@ -157,6 +167,10 @@
 }
 
 .portfolio__caption {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
+
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
