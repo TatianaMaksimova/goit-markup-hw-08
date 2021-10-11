@@ -228,10 +228,16 @@
   font-size: 100%;
   line-height: 1.15;
 
-  width: 448px;
-  height: 120px;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 
   resize: none;
+  height: 120px;
 }
 
 .dropdown__input--textarea::placeholder {
