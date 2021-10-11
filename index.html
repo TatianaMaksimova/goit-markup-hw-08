@@ -18,60 +18,6 @@
         <nav class="site-nav page-header__site-nav">
           <a href="#" class="site-nav__logo"><span class="site-nav__accent">Web</span>Studio</a>
 
-          <button
-            type="button"
-            class="site-nav__button js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="site-nav__menu" href="./images/icons.svg#menu"></use>
-            </svg>
-          </button>
-
-          <div class="menu-container menu-container--geometry js-menu-container" id="mobile-menu">
-            <button class="site-nav__button js-close-menu">
-              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="site-nav__close" href="./images/icons.svg#menu-close"></use>
-              </svg>
-            </button>
-            <ul class="menu-container__nav-list">
-              <li class="menu-container__nav-item">
-                <a class="menu-container__nav-link menu-container__nav-link--accent" href="#"
-                  >Студия</a
-                >
-              </li>
-              <li class="menu-container__nav-item">
-                <a class="menu-container__nav-link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="menu-container__nav-item">
-                <a class="menu-container__nav-link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="menu-container__contact-list">
-              <li class="menu-container__contact-item">
-                <a class="menu-container__contact-tel" href="#">+38 096 111 11 11</a>
-              </li>
-              <li class="menu-container__contact-item">
-                <a class="menu-container__contact-mail" href="#">info@devstudio.com</a>
-              </li>
-            </ul>
-            <ul class="menu-container__social-list">
-              <li class="menu-container__social-item">
-                <a class="menu-container__social-link" href="#">Instagram</a>
-              </li>
-              <li class="menu-container__social-item">
-                <a class="menu-container__social-link" href="#">Twitter</a>
-              </li>
-              <li class="menu-container__social-item">
-                <a class="menu-container__social-link" href="#">Facebook</a>
-              </li>
-              <li class="menu-container__social-item">
-                <a class="menu-container__social-link" href="#">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="#" class="site-nav__link site-nav__link--active">Студия</a>
@@ -275,7 +221,19 @@
           <h2 class="teammate__title">Наша команда</h2>
           <ul class="teammate__list">
             <li class="teammate__item">
-              <img src="./images/i.jpg" width="270" height="260" alt="член команды" />
+              <img
+                src="./images/i.jpg"
+                alt="член команды"
+                srcset="
+                  ./images/teammate/igor-270.jpg    270w,
+                  ./images/teammate/igor-354.jpg    354w,
+                  ./images/teammate/igor-450.jpg    450w,
+                  ./images/teammate/igor@2x-270.jpg 540w,
+                  ./images/teammate/igor@2x-354.jpg 708w,
+                  ./images/teammate/igor@2x-450.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              />
               <div class="teammate__card">
                 <h3 class="teammate__name">Игорь Демьяненко</h3>
                 <p lang="en" class="teammate__profession">Product Designer</p>
@@ -313,7 +271,19 @@
               </div>
             </li>
             <li class="teammate__item">
-              <img src="./images/o.jpg" width="270" height="260" alt="член команды" />
+              <img
+                src="./images/o.jpg"
+                alt="член команды"
+                srcset="
+                  ./images/teammate/olga-270.jpg    270w,
+                  ./images/teammate/olga-354.jpg    354w,
+                  ./images/teammate/olga-450.jpg    450w,
+                  ./images/teammate/olga@2x-270.jpg 540w,
+                  ./images/teammate/olga@2x-354.jpg 708w,
+                  ./images/teammate/olga@2x-450.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              />
               <div class="teammate__card">
                 <h3 class="teammate__name">Ольга Репина</h3>
                 <p lang="en" class="teammate__profession">Frontend Developer</p>
@@ -351,7 +321,19 @@
               </div>
             </li>
             <li class="teammate__item">
-              <img src="./images/n.jpg" width="270" height="260" alt="член команды" />
+              <img
+                src="./images/n.jpg"
+                alt="член команды"
+                srcset="
+                  ./images/teammate/nik-270.jpg    270w,
+                  ./images/teammate/nik-354.jpg    354w,
+                  ./images/teammate/nik-450.jpg    450w,
+                  ./images/teammate/nik@2x-270.jpg 540w,
+                  ./images/teammate/nik@2x-354.jpg 708w,
+                  ./images/teammate/nik@2x-450.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              />
               <div class="teammate__card">
                 <h3 class="teammate__name">Николай Тарасов</h3>
                 <p lang="en" class="teammate__profession">Marketing</p>
@@ -389,7 +371,19 @@
               </div>
             </li>
             <li class="teammate__item">
-              <img src="./images/m.jpg" width="270" height="260" alt="член команды" />
+              <img
+                src="./images/m.jpg"
+                alt="член команды"
+                srcset="
+                  ./images/teammate/mix-270.jpg    270w,
+                  ./images/teammate/mix-354.jpg    354w,
+                  ./images/teammate/mix-450.jpg    450w,
+                  ./images/teammate/mix@2x-270.jpg 540w,
+                  ./images/teammate/mix@2x-354.jpg 708w,
+                  ./images/teammate/mix@2x-450.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              />
               <div class="teammate__card">
                 <h3 class="teammate__name">Михаил Ермаков</h3>
                 <p lang="en" class="teammate__profession">UI Designer</p>
@@ -549,6 +543,60 @@
       </div>
     </footer>
 
+    <!-- Мобильное меню -->
+    <button
+      type="button"
+      class="site-nav__button js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="site-nav__menu" href="./images/icons.svg#menu"></use>
+      </svg>
+    </button>
+
+    <div class="menu-container menu-container--geometry js-menu-container" id="mobile-menu">
+      <button class="site-nav__button js-close-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="site-nav__close" href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-container__nav-list">
+        <li class="menu-container__nav-item">
+          <a class="menu-container__nav-link menu-container__nav-link--accent" href="#">Студия</a>
+        </li>
+        <li class="menu-container__nav-item">
+          <a class="menu-container__nav-link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="menu-container__nav-item">
+          <a class="menu-container__nav-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="menu-container__contact-list">
+        <li class="menu-container__contact-item">
+          <a class="menu-container__contact-tel" href="#">+38 096 111 11 11</a>
+        </li>
+        <li class="menu-container__contact-item">
+          <a class="menu-container__contact-mail" href="#">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="menu-container__social-list">
+        <li class="menu-container__social-item">
+          <a class="menu-container__social-link" href="#">Instagram</a>
+        </li>
+        <li class="menu-container__social-item">
+          <a class="menu-container__social-link" href="#">Twitter</a>
+        </li>
+        <li class="menu-container__social-item">
+          <a class="menu-container__social-link" href="#">Facebook</a>
+        </li>
+        <li class="menu-container__social-item">
+          <a class="menu-container__social-link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Java -->
     <script src="./js/modal.js"></script>
 
     <script
