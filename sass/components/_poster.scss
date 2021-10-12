@@ -19,10 +19,20 @@
 .poster {
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/banner.jpg);
+    url('../../images/banner.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box {
+      background-image: url('../../images/banner/@2x-1600.jpg');
+    }
+  }
 
   &__title {
     @media screen and (max-width: 1199px) {

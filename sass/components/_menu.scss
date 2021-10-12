@@ -40,21 +40,14 @@
   height: 100vh;
 
   background-color: $bgd-text-color;
-  // background-color: orange;
 
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform $duration $timing-function;
 
-  // @media screen and (max-width: 767px) {
-  //   opacity: 0;
-  // }
-
   &.is-open {
     transform: translateX(0);
-    // border: 0;
-    // opacity: 1;
   }
 }
 
