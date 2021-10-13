@@ -53,7 +53,7 @@
 
 .menu-container__nav-list {
   @media screen and (max-width: 479px) {
-    margin-bottom: 200px;
+    margin-bottom: 180px;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -64,9 +64,9 @@
 .menu-container__nav-item:not(:last-child) {
   padding-bottom: 32px;
 
-  // @media screen and (max-width: 479px) {
-  //   padding-bottom: 24px;
-  // }
+  @media screen and (max-width: 479px) {
+    padding-bottom: 24px;
+  }
 }
 
 .menu-container__nav-link {
@@ -92,9 +92,9 @@
 .menu-container__contact-item {
   padding-bottom: 32px;
 
-  // @media screen and (max-width: 479px) {
-  //   padding-bottom: 24px;
-  // }
+  @media screen and (max-width: 479px) {
+    padding-bottom: 24px;
+  }
 
   &:nth-child(2) {
     padding-bottom: 64px;
@@ -144,6 +144,6 @@
   color: $accent-color;
 
   @media screen and (max-width: 479px) {
-    @include font(500, 14px, 1.22, 0.02em);
+    @include font(500, 12px, 1.22, 0.02em);
   }
 }
