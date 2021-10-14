@@ -358,6 +358,13 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .page-header__container,
+  .site-nav__list {
+    position: relative;
+  }
+}
+
 .page-header--border {
   border-bottom: 1px solid #ececec;
 }
@@ -536,12 +543,6 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
     border: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .page-header {
-    position: relative;
   }
 }
 
