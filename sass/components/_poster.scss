@@ -177,6 +177,7 @@
 
   @media screen and (max-width: 479px) {
     width: 100vw;
+    height: 100vh;
   }
 
   @media screen and (min-width: 1200px) {
@@ -220,9 +221,15 @@
 
 /* -----------Форма модального окна-------------- */
 .dropdown__form {
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin: auto;
   padding: 40px;
+  // height: 100vh;
+
+  @media screen and (max-width: 479px) {
+    padding: 30px;
+  }
 }
 
 .dropdown__title {
@@ -249,6 +256,10 @@
   margin: 0;
   padding: 11px 12px;
   padding-left: 42px;
+
+  @media screen and (max-width: 479px) {
+    padding: 5px 10px;
+  }
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;

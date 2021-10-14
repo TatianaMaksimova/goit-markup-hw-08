@@ -138,6 +138,11 @@
   &__text {
     font-style: normal;
     @include font(400, 18px, 1.6, 0.03em);
+
+    @media screen and (max-width: 479px) {
+      font-size: 16px;
+    }
+
     color: $bgd-text-color;
 
     transition: color $duration $timing-function;
@@ -161,7 +166,23 @@
 
 .portfolio__text {
   position: absolute;
-  top: 63px;
+
+  @media screen and (max-width: 479px) {
+    top: 32px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    top: 77px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 49px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 63px;
+  }
+
   left: 24px;
   right: 24px;
 }
